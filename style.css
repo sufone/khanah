@@ -12,6 +12,10 @@ body {
     background-color: #e6f2ff;
 }
 
+h1 {
+    margin: 0;
+}
+
 button {
     all: unset;
     margin: 25px;
@@ -19,13 +23,15 @@ button {
     border: 1px solid #dadce0;
     border-radius: 12px;
     padding: 0 5px;
+    font-size: smaller;
 }
 
 button:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-input {
+input,
+textarea {
     word-break: break-word;
     width: 1000px;
     border-radius: 12px;
@@ -35,7 +41,8 @@ input {
 
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -45,9 +52,9 @@ div#display {
     font-size: smaller;
 }
 
-div#display-container {
-    max-height: 55vh;
-    min-height: 55vh;
+
+textarea {
+    max-height: 60vh;
+    min-height: 60vh;
     max-width: 80vw;
-    overflow: auto;
 }
