@@ -13,15 +13,18 @@
 <body>
     <main>
         <h1>خانة النصوص</h1>
-        <input oninput="updateDisplay()" id="input" type="text" aria-autocomplete="both" aria-haspopup="false"
+        <input id="input" type="text" aria-autocomplete="both" aria-haspopup="false"
             autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="true" spellcheck="false"
             placeholder="">
         <br>
-        <button onclick="emptyPaste()">1- التفريغ ثم اللصق</button>
-        <button onclick="copyText()">2- نسخ المضمون</button>
+        <button onclick="emptyPaste('input')">1- التفريغ ثم اللصق</button>
+        <button onclick="copyText('input')">2- نسخ المضمون</button>
         <br>
         <hr>
-        <textarea name="" id=""></textarea>
+        <textarea name="" id="textarea"></textarea>
+        <br>
+        <button onclick="emptyPaste('textarea')">1- التفريغ ثم اللصق</button>
+        <button onclick="copyText('textarea')">2- نسخ المضمون</button>
     </main>
     <script src=" index.js"></script>
 

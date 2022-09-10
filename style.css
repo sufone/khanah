@@ -24,10 +24,18 @@ button {
     border-radius: 12px;
     padding: 0 5px;
     font-size: smaller;
+    margin-top: 0;
 }
 
 button:hover {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+textarea {
+    max-height: 60vh;
+    min-height: 60vh;
+    max-width: 80vw;
+    overflow: auto;
 }
 
 input,
@@ -48,13 +56,6 @@ textarea:focus {
 
 }
 
-div#display {
-    font-size: smaller;
-}
-
-
-textarea {
-    max-height: 60vh;
-    min-height: 60vh;
-    max-width: 80vw;
+hr {
+    margin-top: 0;
 }

@@ -1,6 +1,6 @@
 
-function copyText() {
-    let inputElementValue = document.getElementById("input").value
+function copyText(elementId) {
+    let inputElementValue = document.getElementById(elementId).value
 
     console.log(inputElementValue)
     navigator.clipboard.writeText(inputElementValue).then(_ => {
@@ -12,14 +12,8 @@ function copyText() {
     })
 }
 
-function updateDisplay() {
-    let inputElementValue = document.getElementById("input").value
-    let displayElement = document.getElementById("display")
-    displayElement.textContent = inputElementValue
-}
-
-function emptyPaste() {
-    let inputElement = document.getElementById("input")
+function emptyPaste(elementId) {
+    let inputElement = document.getElementById(elementId)
     inputElement.value = ""
     navigator.clipboard.readText().then(
         (clipText) => inputElement.value = clipText);
