@@ -1,0 +1,53 @@
+* {
+    font-family: 'adwa-assalaf';
+    font-size: larger;
+    text-align: center;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #e6f2ff;
+}
+
+button {
+    all: unset;
+    margin: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 12px;
+    padding: 0 5px;
+}
+
+button:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input {
+    word-break: break-word;
+    width: 1000px;
+    border-radius: 12px;
+    text-align: right;
+    padding: 7px 12px;
+    border: 1px solid #dadce0;
+
+}
+
+input:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+div#display {
+    font-size: smaller;
+}
+
+div#display-container {
+    max-height: 55vh;
+    min-height: 55vh;
+    max-width: 80vw;
+    overflow: auto;
+}

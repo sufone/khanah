@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>خانة النصوص</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <h1>خانة النصوص</h1>
+        <input oninput="updateDisplay()" id="input" type="text" aria-autocomplete="both"
+            aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="true"
+            spellcheck="false" placeholder="">
+        <br>
+        <button onclick="emptyPaste()">التفريغ ثم اللصق</button>
+        <button onclick="copyText()">نسخ المضمون</button>
+        <div id="display-container">
+            <div id="display"></div>
+        </div>
+    </main>
+    <script src=" index.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.css" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.5/dist/simple-notify.min.js"></script>
+</body>
+
+</html>
